@@ -1,0 +1,16 @@
+<configure 
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax">
+
+  <zojax:resource
+     name="jquery-1.3.2.min.js"
+     file="jquery-1.3.2.min.js" />
+
+  <zojax:resourceinclude
+     name="jquery"
+     library="jquery"
+     type="javascript"
+     standalone="yes"
+     path="jquery-1.3.2.min.js" />
+
+</configure>
