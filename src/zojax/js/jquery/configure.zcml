@@ -1,4 +1,4 @@
-<configure 
+<configure
    xmlns="http://namespaces.zope.org/zope"
    xmlns:i18n="http://namespaces.zope.org/i18n"
    xmlns:zojax="http://namespaces.zope.org/zojax">
@@ -7,7 +7,11 @@
 
   <zojax:resource
      name="jquery.min.js"
-     file="jquery.min.js" />
+     file="jquery-1.11.3.min.js" />
+
+  <zojax:resource
+     name="jquery-migrate.js"
+     file="jquery-migrate-1.2.1.min.js" />
 
   <zojax:resourceinclude
      name="jquery"
@@ -15,5 +19,11 @@
      type="javascript"
      standalone="yes"
      path="jquery.min.js" />
+
+  <zojax:resourceinclude
+     name="jquery-migrate.js"
+     library="jquery"
+     type="javascript"
+     path="jquery-migrate.js" />
 
 </configure>
